@@ -1,0 +1,71 @@
+---
+entries:
+- defaultChannel: stable
+  name: clusterresourceoverride
+  schema: olm.package
+- entries:
+  - name: clusterresourceoverride-operator.v4.17.0-202409100034
+    skipRange: '>=4.3.0 <4.17.0-202409100034'
+  - name: clusterresourceoverride-operator.v4.17.0-202410011205
+    skipRange: '>=4.3.0 <4.17.0-202410011205'
+  - name: clusterresourceoverride-operator.v4.17.0-202410112132
+    skipRange: '>=4.3.0 <4.17.0-202410112132'
+  - name: clusterresourceoverride-operator.v4.17.0-202410241236
+    skipRange: '>=4.3.0 <4.17.0-202410241236'
+  - name: clusterresourceoverride-operator.v4.17.0-202411080405
+    skipRange: '>=4.3.0 <4.17.0-202411080405'
+  - name: clusterresourceoverride-operator.v4.17.0-202411190204
+    skipRange: '>=4.3.0 <4.17.0-202411190204'
+  - name: clusterresourceoverride-operator.v4.17.0-202411251634
+    skipRange: '>=4.3.0 <4.17.0-202411251634'
+  - name: clusterresourceoverride-operator.v4.17.0-202412021735
+    skipRange: '>=4.3.0 <4.17.0-202412021735'
+  - name: clusterresourceoverride-operator.v4.17.0-202412050933
+    skipRange: '>=4.3.0 <4.17.0-202412050933'
+  - name: clusterresourceoverride-operator.v4.17.0-202412170235
+    skipRange: '>=4.3.0 <4.17.0-202412170235'
+    skips:
+    - clusterresourceoverride-operator.v4.17.0-202408151545
+    - clusterresourceoverride-operator.v4.17.0-202412122104
+    - clusterresourceoverride-operator.v4.17.0-202409030638
+    - clusterresourceoverride-operator.v4.17.0-202409100034
+    - clusterresourceoverride-operator.v4.17.0-202407302009
+    - clusterresourceoverride-operator.v4.17.0-202412021735
+    - clusterresourceoverride-operator.v4.17.0-202411230231
+    - clusterresourceoverride-operator.v4.17.0-202408260836
+    - clusterresourceoverride-operator.v4.17.0-202411080405
+    - clusterresourceoverride-operator.v4.17.0-202410241236
+    - clusterresourceoverride-operator.v4.17.0-202412050933
+    - clusterresourceoverride-operator.v4.17.0-202405291241
+    - clusterresourceoverride-operator.v4.17.0-202411190204
+    - clusterresourceoverride-operator.v4.17.0-202410112132
+    - clusterresourceoverride-operator.v4.17.0-202410011205
+    - clusterresourceoverride-operator.v4.17.0-202406202314
+    - clusterresourceoverride-operator.v4.17.0-202411251634
+    - clusterresourceoverride-operator.v4.17.0-202411131633
+    - clusterresourceoverride-operator.v4.17.0-202407090112
+  name: stable
+  package: clusterresourceoverride
+  schema: olm.channel
+- image: registry.redhat.io/openshift4/ose-clusterresourceoverride-operator-bundle@sha256:69914ab42c920f527c4e876258acc4e9bf3c5673f5a80823dc4b2e771420716c
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-clusterresourceoverride-operator-bundle@sha256:46a99e1821f4f960ed8799bd1ddd3a735e9684b7efc52e866940f52297afbf6a
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-clusterresourceoverride-operator-bundle@sha256:83e0ee9e3e04d7b40476e9d1b8496422d39322449fa613a447e8a209986283c3
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-clusterresourceoverride-operator-bundle@sha256:0f4ecdd26824f2336a227e168f0270684a319236f280a2b2c7da37091a7ce80b
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-clusterresourceoverride-operator-bundle@sha256:78a1703fdf2168807c635ff309923152d9b35188f60041eb7f390d00c01dd665
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-clusterresourceoverride-operator-bundle@sha256:4471a959199112e777513981c38ba8931d6fb494b971051b8a94121a482735f4
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-clusterresourceoverride-operator-bundle@sha256:1d5e988b70e304e0fa8f88a461042b1cbe69d786d2b595e5ff8c880d72411645
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-clusterresourceoverride-operator-bundle@sha256:fcf72c2b0c7e9c49016260011cf63f80e23e5d237ca0621e05016cbad7d77ae5
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-clusterresourceoverride-operator-bundle@sha256:5ac9480425bf0f118d9bcdc9a3669ef744ecb413e56afd65ea14688caa060be0
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-clusterresourceoverride-operator-bundle@sha256:74b050fa74311c29413212b1c4dd6f3a5a9f6c451f143d3d21b323f34c8c15e1
+  schema: olm.bundle
+schema: olm.template.basic
+

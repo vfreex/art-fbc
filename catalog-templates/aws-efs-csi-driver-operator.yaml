@@ -1,0 +1,98 @@
+---
+entries:
+- defaultChannel: stable
+  icon:
+    base64data: PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTQ1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2UwMDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPlJlZEhhdC1Mb2dvLUhhdC1Db2xvcjwvdGl0bGU+PHBhdGggZD0iTTE1Ny43Nyw2Mi42MWExNCwxNCwwLDAsMSwuMzEsMy40MmMwLDE0Ljg4LTE4LjEsMTcuNDYtMzAuNjEsMTcuNDZDNzguODMsODMuNDksNDIuNTMsNTMuMjYsNDIuNTMsNDRhNi40Myw2LjQzLDAsMCwxLC4yMi0xLjk0bC0zLjY2LDkuMDZhMTguNDUsMTguNDUsMCwwLDAtMS41MSw3LjMzYzAsMTguMTEsNDEsNDUuNDgsODcuNzQsNDUuNDgsMjAuNjksMCwzNi40My03Ljc2LDM2LjQzLTIxLjc3LDAtMS4wOCwwLTEuOTQtMS43My0xMC4xM1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMjcuNDcsODMuNDljMTIuNTEsMCwzMC42MS0yLjU4LDMwLjYxLTE3LjQ2YTE0LDE0LDAsMCwwLS4zMS0zLjQybC03LjQ1LTMyLjM2Yy0xLjcyLTcuMTItMy4yMy0xMC4zNS0xNS43My0xNi42QzEyNC44OSw4LjY5LDEwMy43Ni41LDk3LjUxLjUsOTEuNjkuNSw5MCw4LDgzLjA2LDhjLTYuNjgsMC0xMS42NC01LjYtMTcuODktNS42LTYsMC05LjkxLDQuMDktMTIuOTMsMTIuNSwwLDAtOC40MSwyMy43Mi05LjQ5LDI3LjE2QTYuNDMsNi40MywwLDAsMCw0Mi41Myw0NGMwLDkuMjIsMzYuMywzOS40NSw4NC45NCwzOS40NU0xNjAsNzIuMDdjMS43Myw4LjE5LDEuNzMsOS4wNSwxLjczLDEwLjEzLDAsMTQtMTUuNzQsMjEuNzctMzYuNDMsMjEuNzdDNzguNTQsMTA0LDM3LjU4LDc2LjYsMzcuNTgsNTguNDlhMTguNDUsMTguNDUsMCwwLDEsMS41MS03LjMzQzIyLjI3LDUyLC41LDU1LC41LDc0LjIyYzAsMzEuNDgsNzQuNTksNzAuMjgsMTMzLjY1LDcwLjI4LDQ1LjI4LDAsNTYuNy0yMC40OCw1Ni43LTM2LjY1LDAtMTIuNzItMTEtMjcuMTYtMzAuODMtMzUuNzgiLz48L3N2Zz4=
+    mediatype: image/svg+xml
+  name: aws-efs-csi-driver-operator
+  schema: olm.package
+- entries:
+  - name: aws-efs-csi-driver-operator.v4.17.0-202409121434
+    skipRange: '>=4.9.0-0 <4.17.0-202409121434'
+  - name: aws-efs-csi-driver-operator.v4.17.0-202410031034
+    skipRange: '>=4.9.0-0 <4.17.0-202410031034'
+  - name: aws-efs-csi-driver-operator.v4.17.0-202410160306
+    skipRange: '>=4.9.0-0 <4.17.0-202410160306'
+  - name: aws-efs-csi-driver-operator.v4.17.0-202410211206
+    skipRange: '>=4.9.0-0 <4.17.0-202410211206'
+  - name: aws-efs-csi-driver-operator.v4.17.0-202411052236
+    skipRange: '>=4.9.0-0 <4.17.0-202411052236'
+  - name: aws-efs-csi-driver-operator.v4.17.0-202411111704
+    skipRange: '>=4.9.0-0 <4.17.0-202411111704'
+  - name: aws-efs-csi-driver-operator.v4.17.0-202411190204
+    skipRange: '>=4.9.0-0 <4.17.0-202411190204'
+  - name: aws-efs-csi-driver-operator.v4.17.0-202411251634
+    skipRange: '>=4.9.0-0 <4.17.0-202411251634'
+  - name: aws-efs-csi-driver-operator.v4.17.0-202412040003
+    skipRange: '>=4.9.0-0 <4.17.0-202412040003'
+  - name: aws-efs-csi-driver-operator.v4.17.0-202412120604
+    skipRange: '>=4.9.0-0 <4.17.0-202412120604'
+  - name: aws-efs-csi-driver-operator.v4.17.0-202412180037
+    skipRange: '>=4.9.0-0 <4.17.0-202412180037'
+    skips:
+    - aws-efs-csi-driver-operator.v4.17.0-202410161505
+    - aws-efs-csi-driver-operator.v4.17.0-202410160306
+    - aws-efs-csi-driver-operator.v4.17.0-202412170235
+    - aws-efs-csi-driver-operator.v4.17.0-202408050714
+    - aws-efs-csi-driver-operator.v4.17.0-202408281437
+    - aws-efs-csi-driver-operator.v4.17.0-202410011205
+    - aws-efs-csi-driver-operator.v4.17.0-202410030035
+    - aws-efs-csi-driver-operator.v4.17.0-202411111704
+    - aws-efs-csi-driver-operator.v4.17.0-202411190204
+    - aws-efs-csi-driver-operator.v4.17.0-202411251634
+    - aws-efs-csi-driver-operator.v4.17.0-202412110234
+    - aws-efs-csi-driver-operator.v4.17.0-202409121434
+    - aws-efs-csi-driver-operator.v4.17.0-202410031034
+    - aws-efs-csi-driver-operator.v4.17.0-202410140705
+    - aws-efs-csi-driver-operator.v4.17.0-202410211206
+    - aws-efs-csi-driver-operator.v4.17.0-202410160105
+    - aws-efs-csi-driver-operator.v4.17.0-202411131633
+    - aws-efs-csi-driver-operator.v4.17.0-202410022234
+    - aws-efs-csi-driver-operator.v4.17.0-202410112132
+    - aws-efs-csi-driver-operator.v4.17.0-202412051604
+    - aws-efs-csi-driver-operator.v4.17.0-202407120641
+    - aws-efs-csi-driver-operator.v4.17.0-202411210934
+    - aws-efs-csi-driver-operator.v4.17.0-202408151545
+    - aws-efs-csi-driver-operator.v4.17.0-202405291241
+    - aws-efs-csi-driver-operator.v4.17.0-202406200511
+    - aws-efs-csi-driver-operator.v4.17.0-202410241236
+    - aws-efs-csi-driver-operator.v4.17.0-202412040003
+    - aws-efs-csi-driver-operator.v4.17.0-202410300036
+    - aws-efs-csi-driver-operator.v4.17.0-202411230231
+    - aws-efs-csi-driver-operator.v4.17.0-202412032103
+    - aws-efs-csi-driver-operator.v4.17.0-202412110905
+    - aws-efs-csi-driver-operator.v4.17.0-202412120604
+    - aws-efs-csi-driver-operator.v4.17.0-202409031337
+    - aws-efs-csi-driver-operator.v4.17.0-202412122104
+    - aws-efs-csi-driver-operator.v4.17.0-202410231505
+    - aws-efs-csi-driver-operator.v4.17.0-202412111045
+    - aws-efs-csi-driver-operator.v4.17.0-202412021134
+    - aws-efs-csi-driver-operator.v4.17.0-202411052236
+    - aws-efs-csi-driver-operator.v4.17.0-202411081138
+  name: stable
+  package: aws-efs-csi-driver-operator
+  schema: olm.channel
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:46eaf05529863f9bb10e30680fb56334f8b25800c502030a5fe3a734c8b1ee4c
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:3a6e4f9193e73cc3b2cf2842beda008577049238df950228c55a7d37178fcae8
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:d4a9c1ed25a182ccc18863ef27dab8407e2e7f694557e8350e91fd20fd68813d
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:5f21b65d538cfd8f10b0239c5facb5dbdadbcc48e0a2bb0023b0c728485dd990
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:d64cfa4d9f2177eb9af068513d818b4b8875a9dcb29c9cb8d5cee29ba5142c02
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:7ff1833205c006ae59a5bda60f43c2dc8acb8d4f9ebc22658d252e2d90ca6621
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:fd85fd150428e5ebf1dce692a426b1a3d9eda199d30c5a4ea6fa4f2c6e5f61b0
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:4f48328039c8153c986ec35e77048a54912b22d1b8b3abf7b7d46e1e50bed57e
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:29488fe9c490af5f86767e14a2430e4c535ea75595e7807edcccd2c7ef0437f2
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:92fd4d705cd9d0afacdf38de2a49f849d2cb46b5b52b858c6980c1b2dfae9cf7
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-aws-efs-csi-driver-operator-bundle@sha256:55dee7ee7b4c8391cc1c37a6aced1f85d383cac5c6513921eab723a9e3792875
+  schema: olm.bundle
+schema: olm.template.basic
+

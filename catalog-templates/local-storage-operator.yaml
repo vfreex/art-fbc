@@ -1,0 +1,93 @@
+---
+entries:
+- defaultChannel: stable
+  icon:
+    base64data: PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTQ1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2UwMDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPlJlZEhhdC1Mb2dvLUhhdC1Db2xvcjwvdGl0bGU+PHBhdGggZD0iTTE1Ny43Nyw2Mi42MWExNCwxNCwwLDAsMSwuMzEsMy40MmMwLDE0Ljg4LTE4LjEsMTcuNDYtMzAuNjEsMTcuNDZDNzguODMsODMuNDksNDIuNTMsNTMuMjYsNDIuNTMsNDRhNi40Myw2LjQzLDAsMCwxLC4yMi0xLjk0bC0zLjY2LDkuMDZhMTguNDUsMTguNDUsMCwwLDAtMS41MSw3LjMzYzAsMTguMTEsNDEsNDUuNDgsODcuNzQsNDUuNDgsMjAuNjksMCwzNi40My03Ljc2LDM2LjQzLTIxLjc3LDAtMS4wOCwwLTEuOTQtMS43My0xMC4xM1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMjcuNDcsODMuNDljMTIuNTEsMCwzMC42MS0yLjU4LDMwLjYxLTE3LjQ2YTE0LDE0LDAsMCwwLS4zMS0zLjQybC03LjQ1LTMyLjM2Yy0xLjcyLTcuMTItMy4yMy0xMC4zNS0xNS43My0xNi42QzEyNC44OSw4LjY5LDEwMy43Ni41LDk3LjUxLjUsOTEuNjkuNSw5MCw4LDgzLjA2LDhjLTYuNjgsMC0xMS42NC01LjYtMTcuODktNS42LTYsMC05LjkxLDQuMDktMTIuOTMsMTIuNSwwLDAtOC40MSwyMy43Mi05LjQ5LDI3LjE2QTYuNDMsNi40MywwLDAsMCw0Mi41Myw0NGMwLDkuMjIsMzYuMywzOS40NSw4NC45NCwzOS40NU0xNjAsNzIuMDdjMS43Myw4LjE5LDEuNzMsOS4wNSwxLjczLDEwLjEzLDAsMTQtMTUuNzQsMjEuNzctMzYuNDMsMjEuNzdDNzguNTQsMTA0LDM3LjU4LDc2LjYsMzcuNTgsNTguNDlhMTguNDUsMTguNDUsMCwwLDEsMS41MS03LjMzQzIyLjI3LDUyLC41LDU1LC41LDc0LjIyYzAsMzEuNDgsNzQuNTksNzAuMjgsMTMzLjY1LDcwLjI4LDQ1LjI4LDAsNTYuNy0yMC40OCw1Ni43LTM2LjY1LDAtMTIuNzItMTEtMjcuMTYtMzAuODMtMzUuNzgiLz48L3N2Zz4=
+    mediatype: image/svg+xml
+  name: local-storage-operator
+  schema: olm.package
+- entries:
+  - name: local-storage-operator.v4.17.0-202409111134
+    skipRange: '>=4.3.0 <4.17.0-202409111134'
+  - name: local-storage-operator.v4.17.0-202410031034
+    skipRange: '>=4.3.0 <4.17.0-202410031034'
+  - name: local-storage-operator.v4.17.0-202410160306
+    skipRange: '>=4.3.0 <4.17.0-202410160306'
+  - name: local-storage-operator.v4.17.0-202410211206
+    skipRange: '>=4.3.0 <4.17.0-202410211206'
+  - name: local-storage-operator.v4.17.0-202410241236
+    skipRange: '>=4.3.0 <4.17.0-202410241236'
+  - name: local-storage-operator.v4.17.0-202411121804
+    skipRange: '>=4.3.0 <4.17.0-202411121804'
+  - name: local-storage-operator.v4.17.0-202411190204
+    skipRange: '>=4.3.0 <4.17.0-202411190204'
+  - name: local-storage-operator.v4.17.0-202411251634
+    skipRange: '>=4.3.0 <4.17.0-202411251634'
+  - name: local-storage-operator.v4.17.0-202412032103
+    skipRange: '>=4.3.0 <4.17.0-202412032103'
+  - name: local-storage-operator.v4.17.0-202412120604
+    skipRange: '>=4.3.0 <4.17.0-202412120604'
+  - name: local-storage-operator.v4.17.0-202412170235
+    skipRange: '>=4.3.0 <4.17.0-202412170235'
+    skips:
+    - local-storage-operator.v4.17.0-202406210743
+    - local-storage-operator.v4.17.0-202412120604
+    - local-storage-operator.v4.17.0-202411131633
+    - local-storage-operator.v4.17.0-202412032103
+    - local-storage-operator.v4.17.0-202410160306
+    - local-storage-operator.v4.17.0-202410022234
+    - local-storage-operator.v4.17.0-202410231706
+    - local-storage-operator.v4.17.0-202411251634
+    - local-storage-operator.v4.17.0-202410241236
+    - local-storage-operator.v4.17.0-202411210934
+    - local-storage-operator.v4.17.0-202410112132
+    - local-storage-operator.v4.17.0-202412051604
+    - local-storage-operator.v4.17.0-202410161505
+    - local-storage-operator.v4.17.0-202409030638
+    - local-storage-operator.v4.17.0-202410101505
+    - local-storage-operator.v4.17.0-202410211206
+    - local-storage-operator.v4.17.0-202408051414
+    - local-storage-operator.v4.17.0-202412050933
+    - local-storage-operator.v4.17.0-202408271906
+    - local-storage-operator.v4.17.0-202410231505
+    - local-storage-operator.v4.17.0-202412131404
+    - local-storage-operator.v4.17.0-202411230231
+    - local-storage-operator.v4.17.0-202410121305
+    - local-storage-operator.v4.17.0-202409111134
+    - local-storage-operator.v4.17.0-202407130042
+    - local-storage-operator.v4.17.0-202408151545
+    - local-storage-operator.v4.17.0-202411121804
+    - local-storage-operator.v4.17.0-202411081836
+    - local-storage-operator.v4.17.0-202412122104
+    - local-storage-operator.v4.17.0-202410011205
+    - local-storage-operator.v4.17.0-202406040742
+    - local-storage-operator.v4.17.0-202411190204
+    - local-storage-operator.v4.17.0-202410031034
+    - local-storage-operator.v4.17.0-202410030035
+  name: stable
+  package: local-storage-operator
+  schema: olm.channel
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:ec17c7bdfc99676626dce434dc756e8f9110c8efb30da1a8e115a427fd5665f9
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:45a490abf20371d8ef391607af1bea5fb39fadfd3b7b49930e8cccb4fff2ca37
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:9546b3bb56335ea4312c03dc769c7f1e6ede1d998ac3b46e2a742518cc8b49c3
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:42d892e25c51bc02dc882f5ee05d386e807933d337c16aba368955278063b790
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:a25ebd9b4824ea00e379ff3121ffd1442ed229955193cc623d5dabd0eb869e2e
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:cdd5e60a22a4c6dc6bcea63dade1a0e75ef2c1691f04e9538969cf828013ad3f
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:d7a9123f1d9dd32ad8e3fc8a2e616bbacb908a61666fe33ddab3bf995a3bef98
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:8309a20e631ab57d48c843ed40ea555db96d1748f1c5d5622f8330c259fd6ff7
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:6f995b69c8f27d1002a506631c757bb7ba6f8640683ba317048104be3c04b1bf
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:6e0fb84c1ce27a9dda23148079b3aa0d7e525cdfd7a3bd48b62958769dbe58ad
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-local-storage-operator-bundle@sha256:bf84f8bce6a9f2d363d54552f4d121d334c068966ad1ee933c9cfc21aaa26686
+  schema: olm.bundle
+schema: olm.template.basic
+

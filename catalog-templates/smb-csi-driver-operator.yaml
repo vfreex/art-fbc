@@ -1,0 +1,77 @@
+---
+entries:
+- defaultChannel: preview
+  icon:
+    base64data: PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTQ1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2UwMDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPlJlZEhhdC1Mb2dvLUhhdC1Db2xvcjwvdGl0bGU+PHBhdGggZD0iTTE1Ny43Nyw2Mi42MWExNCwxNCwwLDAsMSwuMzEsMy40MmMwLDE0Ljg4LTE4LjEsMTcuNDYtMzAuNjEsMTcuNDZDNzguODMsODMuNDksNDIuNTMsNTMuMjYsNDIuNTMsNDRhNi40Myw2LjQzLDAsMCwxLC4yMi0xLjk0bC0zLjY2LDkuMDZhMTguNDUsMTguNDUsMCwwLDAtMS41MSw3LjMzYzAsMTguMTEsNDEsNDUuNDgsODcuNzQsNDUuNDgsMjAuNjksMCwzNi40My03Ljc2LDM2LjQzLTIxLjc3LDAtMS4wOCwwLTEuOTQtMS43My0xMC4xM1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMjcuNDcsODMuNDljMTIuNTEsMCwzMC42MS0yLjU4LDMwLjYxLTE3LjQ2YTE0LDE0LDAsMCwwLS4zMS0zLjQybC03LjQ1LTMyLjM2Yy0xLjcyLTcuMTItMy4yMy0xMC4zNS0xNS43My0xNi42QzEyNC44OSw4LjY5LDEwMy43Ni41LDk3LjUxLjUsOTEuNjkuNSw5MCw4LDgzLjA2LDhjLTYuNjgsMC0xMS42NC01LjYtMTcuODktNS42LTYsMC05LjkxLDQuMDktMTIuOTMsMTIuNSwwLDAtOC40MSwyMy43Mi05LjQ5LDI3LjE2QTYuNDMsNi40MywwLDAsMCw0Mi41Myw0NGMwLDkuMjIsMzYuMywzOS40NSw4NC45NCwzOS40NU0xNjAsNzIuMDdjMS43Myw4LjE5LDEuNzMsOS4wNSwxLjczLDEwLjEzLDAsMTQtMTUuNzQsMjEuNzctMzYuNDMsMjEuNzdDNzguNTQsMTA0LDM3LjU4LDc2LjYsMzcuNTgsNTguNDlhMTguNDUsMTguNDUsMCwwLDEsMS41MS03LjMzQzIyLjI3LDUyLC41LDU1LC41LDc0LjIyYzAsMzEuNDgsNzQuNTksNzAuMjgsMTMzLjY1LDcwLjI4LDQ1LjI4LDAsNTYuNy0yMC40OCw1Ni43LTM2LjY1LDAtMTIuNzItMTEtMjcuMTYtMzAuODMtMzUuNzgiLz48L3N2Zz4=
+    mediatype: image/svg+xml
+  name: smb-csi-driver-operator
+  schema: olm.package
+- entries:
+  - name: smb-csi-driver-operator.v4.17.0-202409121434
+    skipRange: '>=4.15.0-0 <4.17.0'
+  - name: smb-csi-driver-operator.v4.17.0-202410011205
+    skipRange: '>=4.15.0-0 <4.17.0'
+  - name: smb-csi-driver-operator.v4.17.0-202410140705
+    skipRange: '>=4.15.0-0 <4.17.0'
+  - name: smb-csi-driver-operator.v4.17.0-202410211206
+    skipRange: '>=4.15.0-0 <4.17.0'
+  - name: smb-csi-driver-operator.v4.17.0-202410241236
+    skipRange: '>=4.15.0-0 <4.17.0'
+  - name: smb-csi-driver-operator.v4.17.0-202411111704
+    skipRange: '>=4.15.0-0 <4.17.0'
+  - name: smb-csi-driver-operator.v4.17.0-202411190204
+    skipRange: '>=4.15.0-0 <4.17.0'
+  - name: smb-csi-driver-operator.v4.17.0-202411251634
+    skipRange: '>=4.15.0-0 <4.17.0'
+  - name: smb-csi-driver-operator.v4.17.0-202412051604
+    skipRange: '>=4.15.0-0 <4.17.0'
+  - name: smb-csi-driver-operator.v4.17.0-202412170235
+    skipRange: '>=4.15.0-0 <4.17.0'
+    skips:
+    - smb-csi-driver-operator.v4.17.0-202411190204
+    - smb-csi-driver-operator.v4.17.0-202409121434
+    - smb-csi-driver-operator.v4.17.0-202411081138
+    - smb-csi-driver-operator.v4.17.0-202409030638
+    - smb-csi-driver-operator.v4.17.0-202408051016
+    - smb-csi-driver-operator.v4.17.0-202411131633
+    - smb-csi-driver-operator.v4.17.0-202408151545
+    - smb-csi-driver-operator.v4.17.0-202410211206
+    - smb-csi-driver-operator.v4.17.0-202411230231
+    - smb-csi-driver-operator.v4.17.0-202410112132
+    - smb-csi-driver-operator.v4.17.0-202410011205
+    - smb-csi-driver-operator.v4.17.0-202411111704
+    - smb-csi-driver-operator.v4.17.0-202411251634
+    - smb-csi-driver-operator.v4.17.0-202410241236
+    - smb-csi-driver-operator.v4.17.0-202405291241
+    - smb-csi-driver-operator.v4.17.0-202408271906
+    - smb-csi-driver-operator.v4.17.0-202412122104
+    - smb-csi-driver-operator.v4.17.0-202412051604
+    - smb-csi-driver-operator.v4.17.0-202406210743
+    - smb-csi-driver-operator.v4.17.0-202407120641
+    - smb-csi-driver-operator.v4.17.0-202412050933
+    - smb-csi-driver-operator.v4.17.0-202410140705
+  name: preview
+  package: smb-csi-driver-operator
+  schema: olm.channel
+- image: registry.redhat.io/openshift4/ose-smb-csi-driver-operator-bundle@sha256:7fd5d428108fc73521bb74efe48a1c8720643af57287587e73106fe533f89e18
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-smb-csi-driver-operator-bundle@sha256:f3c8677b6174d8c14c8ef69fa5742a0e29cbcbd1f61194b12dbcf6aade87cda6
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-smb-csi-driver-operator-bundle@sha256:37c90346cad052d9261135c3a4f6ef1ae59609ec731361a650a6eddc068954f1
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-smb-csi-driver-operator-bundle@sha256:713ed76fa5ffc361cbd01a5347faa3c979e29ef68a4ebd2aa717fa4e647ea2b4
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-smb-csi-driver-operator-bundle@sha256:0dcd0798f357131a67dec60a389f8abe5f57812087e188818f3eebd36fd93229
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-smb-csi-driver-operator-bundle@sha256:9856aa71798c8723e70ebc10e7377ce09879bf3f47e4efe28cc93b96a7ebd022
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-smb-csi-driver-operator-bundle@sha256:afd9bb9f08b757a62ea58f4b4b6d67923fe90546b599e7a098ea41682735c9f4
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-smb-csi-driver-operator-bundle@sha256:1ad205c408dbd0263c4c48c17282471e018ad2bfb4264712d75a735242800a0e
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-smb-csi-driver-operator-bundle@sha256:c8d4bb29c8ac3acaf81ac2c7e897e5a8a72ea58792f38377d703d6fab84bc66d
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-smb-csi-driver-operator-bundle@sha256:0a9fedf26a48d9714504efb667eaa136686b7fdfc97c7635c8c9e3a2e027b0d7
+  schema: olm.bundle
+schema: olm.template.basic
+

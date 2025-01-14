@@ -1,0 +1,70 @@
+---
+entries:
+- defaultChannel: stable
+  icon:
+    base64data: PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTQ1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2UwMDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPlJlZEhhdC1Mb2dvLUhhdC1Db2xvcjwvdGl0bGU+PHBhdGggZD0iTTE1Ny43Nyw2Mi42MWExNCwxNCwwLDAsMSwuMzEsMy40MmMwLDE0Ljg4LTE4LjEsMTcuNDYtMzAuNjEsMTcuNDZDNzguODMsODMuNDksNDIuNTMsNTMuMjYsNDIuNTMsNDRhNi40Myw2LjQzLDAsMCwxLC4yMi0xLjk0bC0zLjY2LDkuMDZhMTguNDUsMTguNDUsMCwwLDAtMS41MSw3LjMzYzAsMTguMTEsNDEsNDUuNDgsODcuNzQsNDUuNDgsMjAuNjksMCwzNi40My03Ljc2LDM2LjQzLTIxLjc3LDAtMS4wOCwwLTEuOTQtMS43My0xMC4xM1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMjcuNDcsODMuNDljMTIuNTEsMCwzMC42MS0yLjU4LDMwLjYxLTE3LjQ2YTE0LDE0LDAsMCwwLS4zMS0zLjQybC03LjQ1LTMyLjM2Yy0xLjcyLTcuMTItMy4yMy0xMC4zNS0xNS43My0xNi42QzEyNC44OSw4LjY5LDEwMy43Ni41LDk3LjUxLjUsOTEuNjkuNSw5MCw4LDgzLjA2LDhjLTYuNjgsMC0xMS42NC01LjYtMTcuODktNS42LTYsMC05LjkxLDQuMDktMTIuOTMsMTIuNSwwLDAtOC40MSwyMy43Mi05LjQ5LDI3LjE2QTYuNDMsNi40MywwLDAsMCw0Mi41Myw0NGMwLDkuMjIsMzYuMywzOS40NSw4NC45NCwzOS40NU0xNjAsNzIuMDdjMS43Myw4LjE5LDEuNzMsOS4wNSwxLjczLDEwLjEzLDAsMTQtMTUuNzQsMjEuNzctMzYuNDMsMjEuNzdDNzguNTQsMTA0LDM3LjU4LDc2LjYsMzcuNTgsNTguNDlhMTguNDUsMTguNDUsMCwwLDEsMS41MS03LjMzQzIyLjI3LDUyLC41LDU1LC41LDc0LjIyYzAsMzEuNDgsNzQuNTksNzAuMjgsMTMzLjY1LDcwLjI4LDQ1LjI4LDAsNTYuNy0yMC40OCw1Ni43LTM2LjY1LDAtMTIuNzItMTEtMjcuMTYtMzAuODMtMzUuNzgiLz48L3N2Zz4=
+    mediatype: image/svg+xml
+  name: vertical-pod-autoscaler
+  schema: olm.package
+- entries:
+  - name: verticalpodautoscaler.v4.17.0-202409100034
+    skipRange: '>=4.5.0 <4.17.0-202409100034'
+  - name: verticalpodautoscaler.v4.17.0-202410011205
+    skipRange: '>=4.5.0 <4.17.0-202410011205'
+  - name: verticalpodautoscaler.v4.17.0-202410112132
+    skipRange: '>=4.5.0 <4.17.0-202410112132'
+  - name: verticalpodautoscaler.v4.17.0-202410241236
+    skipRange: '>=4.5.0 <4.17.0-202410241236'
+  - name: verticalpodautoscaler.v4.17.0-202411190204
+    skipRange: '>=4.5.0 <4.17.0-202411190204'
+  - name: verticalpodautoscaler.v4.17.0-202411251634
+    skipRange: '>=4.5.0 <4.17.0-202411251634'
+  - name: verticalpodautoscaler.v4.17.0-202412021735
+    skipRange: '>=4.5.0 <4.17.0-202412021735'
+  - name: verticalpodautoscaler.v4.17.0-202412051604
+    skipRange: '>=4.5.0 <4.17.0-202412051604'
+  - name: verticalpodautoscaler.v4.17.0-202412170235
+    skipRange: '>=4.5.0 <4.17.0-202412170235'
+    skips:
+    - verticalpodautoscaler.v4.17.0-202411131633
+    - verticalpodautoscaler.v4.17.0-202406212042
+    - verticalpodautoscaler.v4.17.0-202412122104
+    - verticalpodautoscaler.v4.17.0-202410011205
+    - verticalpodautoscaler.v4.17.0-202409030638
+    - verticalpodautoscaler.v4.17.0-202412051604
+    - verticalpodautoscaler.v4.17.0-202411251634
+    - verticalpodautoscaler.v4.17.0-202409100034
+    - verticalpodautoscaler.v4.17.0-202407302009
+    - verticalpodautoscaler.v4.17.0-202411230231
+    - verticalpodautoscaler.v4.17.0-202406041342
+    - verticalpodautoscaler.v4.17.0-202407082010
+    - verticalpodautoscaler.v4.17.0-202408151545
+    - verticalpodautoscaler.v4.17.0-202411190204
+    - verticalpodautoscaler.v4.17.0-202412021735
+    - verticalpodautoscaler.v4.17.0-202410241236
+    - verticalpodautoscaler.v4.17.0-202412050933
+    - verticalpodautoscaler.v4.17.0-202410112132
+    - verticalpodautoscaler.v4.17.0-202408260836
+  name: stable
+  package: vertical-pod-autoscaler
+  schema: olm.channel
+- image: registry.redhat.io/openshift4/ose-vertical-pod-autoscaler-operator-bundle@sha256:48917b1522c0e4f16e5aaff8196a1cb99487c6f4c15e31d686fb7866f89bc155
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-vertical-pod-autoscaler-operator-bundle@sha256:1f7f88f72c6573f6285d79f1eeb787cb52eecdc237d1773a552a044e4e985561
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-vertical-pod-autoscaler-operator-bundle@sha256:f2e888d0c068202d9ea8bda74040cc79d1475383b22b09587fc376e05c282528
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-vertical-pod-autoscaler-operator-bundle@sha256:a49468d915271ff9949ec5df023e8a4b556203ea909199b491394ae03a5d5a38
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-vertical-pod-autoscaler-operator-bundle@sha256:e280d81b1583dbd83a729ff35b46319cd81f8150552a16088b194a2b3756a585
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-vertical-pod-autoscaler-operator-bundle@sha256:9420093c876c0a52394442b1e31816be357e85e49463f2ed30080a1acf3b7a0a
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-vertical-pod-autoscaler-operator-bundle@sha256:f129a0c6ddfeb7330df7276226f11153cb3ec26a8cbeda9c21b103d2f9bcde76
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-vertical-pod-autoscaler-operator-bundle@sha256:ac8098c2c4310b993c3a47a17bd89149b91b7261176077cc330cb09521e969bd
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-vertical-pod-autoscaler-operator-bundle@sha256:50d1aea48197d44b83b498d43f394d2d4aa372567e722a74c99b807968700de8
+  schema: olm.bundle
+schema: olm.template.basic
+

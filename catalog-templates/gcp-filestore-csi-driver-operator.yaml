@@ -1,0 +1,70 @@
+---
+entries:
+- defaultChannel: stable
+  icon:
+    base64data: PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTQ1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2UwMDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPlJlZEhhdC1Mb2dvLUhhdC1Db2xvcjwvdGl0bGU+PHBhdGggZD0iTTE1Ny43Nyw2Mi42MWExNCwxNCwwLDAsMSwuMzEsMy40MmMwLDE0Ljg4LTE4LjEsMTcuNDYtMzAuNjEsMTcuNDZDNzguODMsODMuNDksNDIuNTMsNTMuMjYsNDIuNTMsNDRhNi40Myw2LjQzLDAsMCwxLC4yMi0xLjk0bC0zLjY2LDkuMDZhMTguNDUsMTguNDUsMCwwLDAtMS41MSw3LjMzYzAsMTguMTEsNDEsNDUuNDgsODcuNzQsNDUuNDgsMjAuNjksMCwzNi40My03Ljc2LDM2LjQzLTIxLjc3LDAtMS4wOCwwLTEuOTQtMS43My0xMC4xM1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMjcuNDcsODMuNDljMTIuNTEsMCwzMC42MS0yLjU4LDMwLjYxLTE3LjQ2YTE0LDE0LDAsMCwwLS4zMS0zLjQybC03LjQ1LTMyLjM2Yy0xLjcyLTcuMTItMy4yMy0xMC4zNS0xNS43My0xNi42QzEyNC44OSw4LjY5LDEwMy43Ni41LDk3LjUxLjUsOTEuNjkuNSw5MCw4LDgzLjA2LDhjLTYuNjgsMC0xMS42NC01LjYtMTcuODktNS42LTYsMC05LjkxLDQuMDktMTIuOTMsMTIuNSwwLDAtOC40MSwyMy43Mi05LjQ5LDI3LjE2QTYuNDMsNi40MywwLDAsMCw0Mi41Myw0NGMwLDkuMjIsMzYuMywzOS40NSw4NC45NCwzOS40NU0xNjAsNzIuMDdjMS43Myw4LjE5LDEuNzMsOS4wNSwxLjczLDEwLjEzLDAsMTQtMTUuNzQsMjEuNzctMzYuNDMsMjEuNzdDNzguNTQsMTA0LDM3LjU4LDc2LjYsMzcuNTgsNTguNDlhMTguNDUsMTguNDUsMCwwLDEsMS41MS03LjMzQzIyLjI3LDUyLC41LDU1LC41LDc0LjIyYzAsMzEuNDgsNzQuNTksNzAuMjgsMTMzLjY1LDcwLjI4LDQ1LjI4LDAsNTYuNy0yMC40OCw1Ni43LTM2LjY1LDAtMTIuNzItMTEtMjcuMTYtMzAuODMtMzUuNzgiLz48L3N2Zz4=
+    mediatype: image/svg+xml
+  name: gcp-filestore-csi-driver-operator
+  schema: olm.package
+- entries:
+  - name: gcp-filestore-csi-driver-operator.v4.17.0-202409100034
+    skipRange: '>=4.11.0-0 <4.17.0'
+  - name: gcp-filestore-csi-driver-operator.v4.17.0-202410011205
+    skipRange: '>=4.11.0-0 <4.17.0'
+  - name: gcp-filestore-csi-driver-operator.v4.17.0-202410112132
+    skipRange: '>=4.11.0-0 <4.17.0'
+  - name: gcp-filestore-csi-driver-operator.v4.17.0-202410211206
+    skipRange: '>=4.11.0-0 <4.17.0'
+  - name: gcp-filestore-csi-driver-operator.v4.17.0-202410241236
+    skipRange: '>=4.11.0-0 <4.17.0'
+  - name: gcp-filestore-csi-driver-operator.v4.17.0-202411190204
+    skipRange: '>=4.11.0-0 <4.17.0'
+  - name: gcp-filestore-csi-driver-operator.v4.17.0-202411251634
+    skipRange: '>=4.11.0-0 <4.17.0'
+  - name: gcp-filestore-csi-driver-operator.v4.17.0-202412101803
+    skipRange: '>=4.11.0-0 <4.17.0'
+  - name: gcp-filestore-csi-driver-operator.v4.17.0-202412170235
+    skipRange: '>=4.11.0-0 <4.17.0'
+    skips:
+    - gcp-filestore-csi-driver-operator.v4.17.0-202406200511
+    - gcp-filestore-csi-driver-operator.v4.17.0-202410211206
+    - gcp-filestore-csi-driver-operator.v4.17.0-202412101803
+    - gcp-filestore-csi-driver-operator.v4.17.0-202410112132
+    - gcp-filestore-csi-driver-operator.v4.17.0-202411251634
+    - gcp-filestore-csi-driver-operator.v4.17.0-202405291241
+    - gcp-filestore-csi-driver-operator.v4.17.0-202408271906
+    - gcp-filestore-csi-driver-operator.v4.17.0-202411190204
+    - gcp-filestore-csi-driver-operator.v4.17.0-202407122310
+    - gcp-filestore-csi-driver-operator.v4.17.0-202411230231
+    - gcp-filestore-csi-driver-operator.v4.17.0-202409030638
+    - gcp-filestore-csi-driver-operator.v4.17.0-202409100034
+    - gcp-filestore-csi-driver-operator.v4.17.0-202410011205
+    - gcp-filestore-csi-driver-operator.v4.17.0-202412051604
+    - gcp-filestore-csi-driver-operator.v4.17.0-202408050714
+    - gcp-filestore-csi-driver-operator.v4.17.0-202411131633
+    - gcp-filestore-csi-driver-operator.v4.17.0-202410241236
+    - gcp-filestore-csi-driver-operator.v4.17.0-202408151545
+    - gcp-filestore-csi-driver-operator.v4.17.0-202412122104
+  name: stable
+  package: gcp-filestore-csi-driver-operator
+  schema: olm.channel
+- image: registry.redhat.io/openshift4/ose-gcp-filestore-csi-driver-operator-bundle@sha256:569de99979a942693825a3602c0dec923a866581f41797bd7e34206b92785f6c
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-gcp-filestore-csi-driver-operator-bundle@sha256:3caa34fa3f38cfd9dfdb56cc5b64f637f8be054d01b3e6d20b50ea787f0eb03e
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-gcp-filestore-csi-driver-operator-bundle@sha256:e89608d457c1a689cada02e8b9797e5e3d15dfa3de604cebab95a6378b603bcc
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-gcp-filestore-csi-driver-operator-bundle@sha256:cb7445d6f43454e6e18cbd50c8c23170cc5fd0070ac1c8baf1537ff90eccaf74
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-gcp-filestore-csi-driver-operator-bundle@sha256:d6334edb38bed924c68451ee2d92042d8337063ada343829de4ea5f4ad9e5875
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-gcp-filestore-csi-driver-operator-bundle@sha256:688460cf6d145a7675503d183a1f54540c14602aa88a6f475d3966dfb1bb76a6
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-gcp-filestore-csi-driver-operator-bundle@sha256:473840e7492613fc6716f9b78415099359b6fc098ac5b7525d677948bc2acbe6
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-gcp-filestore-csi-driver-operator-bundle@sha256:8e3c6f5221dbc789a4ede956a67a0039487b899882f3886e830674ecdd0f8001
+  schema: olm.bundle
+- image: registry.redhat.io/openshift4/ose-gcp-filestore-csi-driver-operator-bundle@sha256:78d9ff805361c3f7bdbdf35f68ac36bf60a0bcd7cd38231f5f4c5894a50afef7
+  schema: olm.bundle
+schema: olm.template.basic
+

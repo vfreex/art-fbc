@@ -1,0 +1,2383 @@
+---
+defaultChannel: stable
+icon:
+  base64data: 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
+  mediatype: image/png
+name: ptp-operator
+schema: olm.package
+---
+entries:
+- name: ptp-operator.v4.17.0-202409100034
+  skipRange: '>=4.3.0-0 <4.17.0-202409100034'
+- name: ptp-operator.v4.17.0-202410011205
+  skipRange: '>=4.3.0-0 <4.17.0-202410011205'
+- name: ptp-operator.v4.17.0-202410151605
+  skipRange: '>=4.3.0-0 <4.17.0-202410151605'
+- name: ptp-operator.v4.17.0-202410211206
+  skipRange: '>=4.3.0-0 <4.17.0-202410211206'
+- name: ptp-operator.v4.17.0-202410241236
+  skipRange: '>=4.3.0-0 <4.17.0-202410241236'
+- name: ptp-operator.v4.17.0-202411061438
+  skipRange: '>=4.3.0-0 <4.17.0-202411061438'
+- name: ptp-operator.v4.17.0-202411190204
+  skipRange: '>=4.3.0-0 <4.17.0-202411190204'
+- name: ptp-operator.v4.17.0-202411251634
+  skipRange: '>=4.3.0-0 <4.17.0-202411251634'
+- name: ptp-operator.v4.17.0-202412101533
+  skipRange: '>=4.3.0-0 <4.17.0-202412101533'
+- name: ptp-operator.v4.17.0-202412181636
+  skipRange: '>=4.3.0-0 <4.17.0-202412181636'
+- name: ptp-operator.v4.17.0-202412310807
+  skipRange: '>=4.3.0-0 <4.17.0-202412310807'
+  skips:
+  - ptp-operator.v4.17.0-202408271906
+  - ptp-operator.v4.17.0-202411190204
+  - ptp-operator.v4.17.0-202410161936
+  - ptp-operator.v4.17.0-202406031613
+  - ptp-operator.v4.17.0-202412241007
+  - ptp-operator.v4.17.0-202407102341
+  - ptp-operator.v4.17.0-202410011205
+  - ptp-operator.v4.17.0-202412122104
+  - ptp-operator.v4.17.0-202412170235
+  - ptp-operator.v4.17.0-202411061438
+  - ptp-operator.v4.17.0-202408051414
+  - ptp-operator.v4.17.0-202411230231
+  - ptp-operator.v4.17.0-202411251634
+  - ptp-operator.v4.17.0-202410151605
+  - ptp-operator.v4.17.0-202411131633
+  - ptp-operator.v4.17.0-202412101533
+  - ptp-operator.v4.17.0-202412200333
+  - ptp-operator.v4.17.0-202409030638
+  - ptp-operator.v4.17.0-202412051604
+  - ptp-operator.v4.17.0-202410150804
+  - ptp-operator.v4.17.0-202412181636
+  - ptp-operator.v4.17.0-202410211206
+  - ptp-operator.v4.17.0-202409100034
+  - ptp-operator.v4.17.0-202406231641
+  - ptp-operator.v4.17.0-202412050933
+  - ptp-operator.v4.17.0-202408151545
+  - ptp-operator.v4.17.0-202410241236
+name: stable
+package: ptp-operator
+schema: olm.channel
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:4649da59b65ddf6ca3aebc7fa47c2dd07b1b2e28d9b0777b7b6db039d45a092b
+name: ptp-operator.v4.17.0-202409100034
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202409100034
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:c375023b60cd3ff995c053df1430cc0011f8158f4ab1dbc392ef418ca062789b
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202409100034'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:955629afefd9d52ec5fb890c0c58aba2710286dd50e224d31cf2b2837370239a
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:334c6f7811e882797be1a1ed74cbb878c65d6bb6621be1544cf12f693091f9fb
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:4649da59b65ddf6ca3aebc7fa47c2dd07b1b2e28d9b0777b7b6db039d45a092b
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:c375023b60cd3ff995c053df1430cc0011f8158f4ab1dbc392ef418ca062789b
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:5a5a2217a07571ef6c52ec04cbb0f54f8a4c8c9b57e4af8d23f800c0f52497c4
+  name: ose-ptp-rhel9
+schema: olm.bundle
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:b7be04445e042a355944f21699da4dcd307c84ed1252cbdc9daf18bd002044cc
+name: ptp-operator.v4.17.0-202410011205
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202410011205
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:6b9346812e1f3398d849e825d0bda111acd146605ee7cabcc9d9962a03d21d43
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202410011205'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:d474ce0d67ee18df603c9dc1223b8657d8bfeb5cce11f97e6e299bb1a2830ba2
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:6fbeaf03058bb5d6e9e3311a7afe67666e0770532c978b6b57e77ea2851cb085
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:b7be04445e042a355944f21699da4dcd307c84ed1252cbdc9daf18bd002044cc
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:6b9346812e1f3398d849e825d0bda111acd146605ee7cabcc9d9962a03d21d43
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:a13b6aa42d4fea2ccce6169528c0a360c668d0e11a67ace04548ab06137c1ca5
+  name: ose-ptp-rhel9
+schema: olm.bundle
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:9b3a22b482b4f7ba827b0b297386f2e7f521136df8a2bd4283b694b662be73ee
+name: ptp-operator.v4.17.0-202410151605
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202410151605
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:3506f0ab3ace40df6e5e4d15189bf0013849c294cb8d0bcb8220b03f33a4af69
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202410151605'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:fe2d7fda8a423f369022620ee17a7c3b6b40c65d13be541da5d8052a7e4117ea
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:99a3b38ad971d2220e6ab67ebead14f2e988bf22c85792b50ffbc9f23325e417
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:9b3a22b482b4f7ba827b0b297386f2e7f521136df8a2bd4283b694b662be73ee
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:3506f0ab3ace40df6e5e4d15189bf0013849c294cb8d0bcb8220b03f33a4af69
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:75c0d52ff181e0c7fc5022f6a1db13ab60781cb35c7aa6098cb5cf32ad9c0c4b
+  name: ose-ptp-rhel9
+schema: olm.bundle
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:b4734363e10bd912aeb5f79aa9cd0f14adf567dfa098aa1f14a6d14b64505af6
+name: ptp-operator.v4.17.0-202410211206
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202410211206
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:937929cc44f7fb0955519228cd443a15145903fef9334bf3ec092e3fb81f1267
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202410211206'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:fe2d7fda8a423f369022620ee17a7c3b6b40c65d13be541da5d8052a7e4117ea
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:42be2d5bb4d09f4fa31602f8521af07b0c1f27f47379d1529b769bc7bd61abc9
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:b4734363e10bd912aeb5f79aa9cd0f14adf567dfa098aa1f14a6d14b64505af6
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:937929cc44f7fb0955519228cd443a15145903fef9334bf3ec092e3fb81f1267
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:75c0d52ff181e0c7fc5022f6a1db13ab60781cb35c7aa6098cb5cf32ad9c0c4b
+  name: ose-ptp-rhel9
+schema: olm.bundle
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:0cee10c50b12f6c7332a781704873496b333af06437cd80210c6995b504da810
+name: ptp-operator.v4.17.0-202410241236
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202410241236
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:be216482fc42a05c1d7e0f01738a964450e2e5548149424195fb13248ae50821
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202410241236'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:822464020d89b7f2289f103ef4757bd2bbad2073d69596a537fc9393d2decc10
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:3fa22124916523b958c67af8ad652e73a2c3d68bb5579da1cba1ade537f3b7ae
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:0cee10c50b12f6c7332a781704873496b333af06437cd80210c6995b504da810
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:be216482fc42a05c1d7e0f01738a964450e2e5548149424195fb13248ae50821
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:a12b4c012d07a9aae5d0973b2fed2881f7daf64ac6f4c6e4b31f7e262badc5f9
+  name: ose-ptp-rhel9
+schema: olm.bundle
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:c93746cf4ec57042a6de893cd4e0e081abc2b37af3bd6192ae6d2544d5fd1736
+name: ptp-operator.v4.17.0-202411061438
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202411061438
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:0f64baf02dde2e2da863f2d43071c0859ed5416af728fffffcfb676749c4ae1a
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202411061438'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:822464020d89b7f2289f103ef4757bd2bbad2073d69596a537fc9393d2decc10
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:3fa22124916523b958c67af8ad652e73a2c3d68bb5579da1cba1ade537f3b7ae
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:c93746cf4ec57042a6de893cd4e0e081abc2b37af3bd6192ae6d2544d5fd1736
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:0f64baf02dde2e2da863f2d43071c0859ed5416af728fffffcfb676749c4ae1a
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:622c870d739839d7c8ed2636224360be670c87ff73cdf6ce7623a8a693338b2f
+  name: ose-ptp-rhel9
+schema: olm.bundle
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:c9924fca2ca09f2cc3b1e62e0e66203e94893a074eb5769ffd2c81689e74f6f7
+name: ptp-operator.v4.17.0-202411190204
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202411190204
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:3a04cd9bc45ff481821e3731327c73af717e7ce6f1d486f396f37cdb4f4ef789
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202411190204'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:b3b17e654349eb5102a996417326c6db643d516c1d61669a1b9093e20dd03f61
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:fcb0bad899e6c35cbb03c7433c1d46216ad18203a4c40cf095a555251484abfc
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:c9924fca2ca09f2cc3b1e62e0e66203e94893a074eb5769ffd2c81689e74f6f7
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:3a04cd9bc45ff481821e3731327c73af717e7ce6f1d486f396f37cdb4f4ef789
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:b5a4bdf775dab73100f5527f37dfeb01a2b8ec085628e70909c51b00e08d8dc9
+  name: ose-ptp-rhel9
+schema: olm.bundle
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:d49d94016088f2604cc37efdbd7799ed63d7e03cdbd1832c660937837682c2a6
+name: ptp-operator.v4.17.0-202411251634
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202411251634
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:22aa1ee37be874116a40b16401cb677efffe305801cb88f8ebfca8b239e7fce9
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202411251634'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:a61430f97df103e7fd4d9667be8301dcfbde405549cfd913694d139e2723de1c
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:d58db1ada34f964a618d34c498776c6400f4fdb3ec89e3e1f2ab6722d8f2f3da
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:d49d94016088f2604cc37efdbd7799ed63d7e03cdbd1832c660937837682c2a6
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:22aa1ee37be874116a40b16401cb677efffe305801cb88f8ebfca8b239e7fce9
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:c08b4351ac92391d69c5a9257cb3c8291b73063d84607a34306c549b5d4633d8
+  name: ose-ptp-rhel9
+schema: olm.bundle
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:8e8f972474d39feafa129ec09109e8dc20bd9b93f79d9a43fd11af6cf345908f
+name: ptp-operator.v4.17.0-202412101533
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202412101533
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:5f179661718037fe693350403a268c068f1683f4bd525ed4e22c6a5c97d42aab
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202412101533'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:aabf5f95887ca82db9172d595a00d1f597681fd6bc2b21fb54841e542954b135
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:bd74305569e094d9bd5ad258904ea9ceb632c7f47f35c8daf44600c43b1224c3
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:8e8f972474d39feafa129ec09109e8dc20bd9b93f79d9a43fd11af6cf345908f
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:5f179661718037fe693350403a268c068f1683f4bd525ed4e22c6a5c97d42aab
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:f794c5a17dd3e3500cff1c4b868c6b3d0c5741bf19df7f8727507998a1256553
+  name: ose-ptp-rhel9
+schema: olm.bundle
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:d2f23924a0e607c40355d4e8a9f4225b2e3f912e2b76d087ab7bab18a6411176
+name: ptp-operator.v4.17.0-202412181636
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202412181636
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:d4d8f1b8635534ca3ad3a46337ddaa25ffee10ea1e3dbddcd5ce8e7ba37881ca
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202412181636'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:43285ff04c9a5dca226947b67d66a078e3a87179bbd62c3c993b432b24eb4718
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:3fcd8e2bf0bcb8ff8c93a87af2c59a3bcae7be8792f9d3236c9b5bbd9b6db3b2
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:d2f23924a0e607c40355d4e8a9f4225b2e3f912e2b76d087ab7bab18a6411176
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:d4d8f1b8635534ca3ad3a46337ddaa25ffee10ea1e3dbddcd5ce8e7ba37881ca
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:8dc4a51ac9dd3d3384a8983a2442cf22771f5c3be2ef89b0a9d61197212478e2
+  name: ose-ptp-rhel9
+schema: olm.bundle
+---
+image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:87dcb09d738a5888416714ab1585fa6d9fafd761b9f3d2664f0d249565df3003
+name: ptp-operator.v4.17.0-202412310807
+package: ptp-operator
+properties:
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: NodePtpDevice
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpConfig
+    version: v1
+- type: olm.gvk
+  value:
+    group: ptp.openshift.io
+    kind: PtpOperatorConfig
+    version: v1
+- type: olm.package
+  value:
+    packageName: ptp-operator
+    version: 4.17.0-202412310807
+- type: olm.csv.metadata
+  value:
+    annotations:
+      alm-examples: |-
+        [
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "NodePtpDevice",
+            "metadata": {
+              "name": "node.example.com"
+            },
+            "spec": {}
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpConfig",
+            "metadata": {
+              "name": "example-ptpconfig"
+            },
+            "spec": {
+              "profile": [
+                {
+                  "interface": "ens787f1",
+                  "name": "profile1",
+                  "phc2sysOpts": "-a -r",
+                  "ptp4lOpts": "-s -2",
+                  "ptpClockThreshold": {}
+                }
+              ],
+              "recommend": [
+                {
+                  "match": [
+                    {
+                      "nodeLabel": "node-role.kubernetes.io/worker=",
+                      "nodeName": "node.example.com"
+                    }
+                  ],
+                  "priority": 4,
+                  "profile": "profile1"
+                }
+              ]
+            }
+          },
+          {
+            "apiVersion": "ptp.openshift.io/v1",
+            "kind": "PtpOperatorConfig",
+            "metadata": {
+              "name": "default"
+            },
+            "spec": {
+              "daemonNodeSelector": {
+                "feature.node.kubernetes.io/ptp-capable": "yes",
+                "node-role.kubernetes.io/worker": ""
+              },
+              "ptpEventConfig": {}
+            }
+          }
+        ]
+      capabilities: Basic Install
+      categories: Networking
+      certified: "false"
+      containerImage: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:1a3e95dbafa59173d5b8b8346cea48b075932cbd82418c9fd2693061964b9b51
+      createdAt: "2024-06-12"
+      description: This software enables configuration of Precision Time Protocol(PTP)
+        on Kubernetes. It detects hardware capable PTP devices on each node, and configures
+        linuxptp processes such as ptp4l, phc2sys and timemaster.
+      features.operators.openshift.io/cnf: "false"
+      features.operators.openshift.io/cni: "false"
+      features.operators.openshift.io/csi: "false"
+      features.operators.openshift.io/disconnected: "true"
+      features.operators.openshift.io/fips-compliant: "false"
+      features.operators.openshift.io/proxy-aware: "false"
+      features.operators.openshift.io/tls-profiles: "false"
+      features.operators.openshift.io/token-auth-aws: "false"
+      features.operators.openshift.io/token-auth-azure: "false"
+      features.operators.openshift.io/token-auth-gcp: "false"
+      olm.skipRange: '>=4.3.0-0 <4.17.0-202412310807'
+      operatorframework.io/suggested-namespace: openshift-ptp
+      operators.openshift.io/infrastructure-features: '["disconnected"]'
+      operators.openshift.io/valid-subscription: '["OpenShift Kubernetes Engine",
+        "OpenShift Container Platform", "OpenShift Platform Plus"]'
+      operators.operatorframework.io/builder: operator-sdk-v1.22.0-ocp
+      operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+      provider: Red Hat
+      repository: https://github.com/openshift/ptp-operator
+      support: Red Hat
+    apiServiceDefinitions: {}
+    crdDescriptions:
+      owned:
+      - description: NodePtpDevice is the Schema for the nodeptpdevices API
+        displayName: Node Ptp Device
+        kind: NodePtpDevice
+        name: nodeptpdevices.ptp.openshift.io
+        version: v1
+      - description: PtpConfig is the Schema for the ptpconfigs API
+        displayName: Ptp Config
+        kind: PtpConfig
+        name: ptpconfigs.ptp.openshift.io
+        version: v1
+      - description: PtpOperatorConfig is the Schema for the ptpoperatorconfigs API
+        displayName: Ptp Operator Config
+        kind: PtpOperatorConfig
+        name: ptpoperatorconfigs.ptp.openshift.io
+        specDescriptors:
+        - description: 'ApiVersion is used to determine which API is used for the
+            event service 1.0: default version. event service is mapped to internal
+            REST-API. 2.x: event service is mapped to O-RAN v3.0 Compliant O-Cloud
+            Notification REST-API.'
+          displayName: ApiVersion
+          path: ptpEventConfig.apiVersion
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: StorageType is the type of storage to store subscription data
+          displayName: Storage Type
+          path: ptpEventConfig.storageType
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        - description: 'TransportHost format is <protocol>://<transport-service>.<namespace>.svc.cluster.local:<transport-port>
+            Example HTTP transport: "http://ptp-event-publisher-service-NODE_NAME.openshift-ptp.svc.cluster.local:9043"'
+          displayName: Transport Host
+          path: ptpEventConfig.transportHost
+          x-descriptors:
+          - urn:alm:descriptor:com.tectonic.ui:text
+        version: v1
+    description: |
+      # Precision Time Protocol (PTP) Operator for Openshift
+
+      ## Introdution
+      PTP Operator manages cluster wide PTP configuration.
+      This operator has to run in namespace 'openshift-ptp'. An Operator Group is also required to install this operator:
+      ```
+      $ oc create -f - <<EOF
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: openshift-ptp
+        labels:
+          name: openshift-ptp
+          openshift.io/cluster-monitoring: "true"
+      EOF
+
+      $ oc create -f - <<EOF
+      apiVersion: operators.coreos.com/v1
+      kind: OperatorGroup
+      metadata:
+        name: ptp-operators
+        namespace: openshift-ptp
+      spec:
+        targetNamespaces:
+        - openshift-ptp
+      EOF
+      ```
+    displayName: PTP Operator
+    installModes:
+    - supported: true
+      type: OwnNamespace
+    - supported: true
+      type: SingleNamespace
+    - supported: false
+      type: MultiNamespace
+    - supported: false
+      type: AllNamespaces
+    keywords:
+    - ptp
+    links:
+    - name: Documentation operator
+      url: https://github.com/openshift/ptp-operator
+    - name: Documentation operand
+      url: https://github.com/openshift/linuxptp-daemon
+    maintainers:
+    - email: support@redhat.com
+      name: Red Hat
+    maturity: alpha
+    provider:
+      name: Red Hat
+relatedImages:
+- image: registry.redhat.io/openshift4/ose-cloud-event-proxy-rhel9@sha256:1b7fd5e5246a12f9e364852952a8d8550bc7302f3d58c108d34f2c3d3a868285
+  name: ose-cloud-event-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-kube-rbac-proxy-rhel9@sha256:3fcd8e2bf0bcb8ff8c93a87af2c59a3bcae7be8792f9d3236c9b5bbd9b6db3b2
+  name: ose-kube-rbac-proxy-rhel9
+- image: registry.redhat.io/openshift4/ose-ptp-operator-bundle@sha256:87dcb09d738a5888416714ab1585fa6d9fafd761b9f3d2664f0d249565df3003
+  name: ""
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9-operator@sha256:1a3e95dbafa59173d5b8b8346cea48b075932cbd82418c9fd2693061964b9b51
+  name: ose-ptp-rhel9-operator
+- image: registry.redhat.io/openshift4/ose-ptp-rhel9@sha256:8dc4a51ac9dd3d3384a8983a2442cf22771f5c3be2ef89b0a9d61197212478e2
+  name: ose-ptp-rhel9
+schema: olm.bundle
